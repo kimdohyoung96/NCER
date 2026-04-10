@@ -1,0 +1,13 @@
+﻿game,triage,count,rate_within_rag_tasks,rag_tasks
+aion2,yes,238,0.5265486725663717,452
+aion2,no,213,0.47123893805309736,452
+bnsneo,yes,0,0.0,5
+bnsneo,no,5,1.0,5
+lineage2m,yes,6,0.25,24
+lineage2m,no,18,0.75,24
+lineageclassic,yes,116,0.39057239057239057,297
+lineageclassic,no,181,0.6094276094276094,297
+lineagem,yes,12,0.6,20
+lineagem,no,8,0.4,20
+lineagew,yes,4,0.13793103448275862,29
+lineagew,no,25,0.8620689655172413,29
