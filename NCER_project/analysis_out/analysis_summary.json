@@ -38,7 +38,9 @@
     "rework_rate_all_tasks": 0.4184184184184184,
     "rework_reason_distribution": {
       "updated_after_initial_submit": 418
-    }
+    },
+    "ground_truth_time_based_reworked_tasks": 418,
+    "ground_truth_time_based_rework_rate": 0.4184184184184184
   },
   "time_metrics": {
     "average_tagging_lead_time_sec": 699.2486856856857,
@@ -193,5 +195,54 @@
     "missing_should_use_docs_rate": 0.13613613613613615,
     "tasks_with_doc_comment": 336,
     "tasks_with_answer_comment": 398
+  },
+  "monthly_operation_guidance": {
+    "keep_as_core_kpis": {
+      "annotation_completion_rate": 1.0,
+      "quality_review_coverage": 0.8238238238238238,
+      "triage_coverage": 0.8268268268268268,
+      "ground_truth_time_based_rework_rate": 0.4184184184184184,
+      "average_tagging_lead_time_sec": 699.2486856856857,
+      "median_tagging_lead_time_sec": 227.161,
+      "average_daily_output": 99.9,
+      "median_daily_output": 98.5,
+      "strict_pass_rate_good_only": 0.4520048602673147,
+      "lenient_pass_rate_good_or_fair": 0.6184690157958688,
+      "fallback_rate": 0.5445445445445446,
+      "missing_should_use_docs_rate": 0.13613613613613615
+    },
+    "use_as_reference_metrics": {
+      "expected_task_count": 1000,
+      "filtered_task_count": 999,
+      "p90_tagging_lead_time_sec": 1263.9838000000002,
+      "p95_tagging_lead_time_sec": 2792.4034999999926,
+      "min_tagging_lead_time_sec": 1.56,
+      "max_tagging_lead_time_sec": 60138.053,
+      "tasks_with_zero_used_docs": 540,
+      "tasks_with_doc_comment": 336,
+      "tasks_with_answer_comment": 398
+    },
+    "visualization_recommendations": {
+      "required_charts": [
+        "intent_distribution",
+        "daily_task_counts",
+        "daily_average_tagging_time",
+        "game_task_counts",
+        "game_average_tagging_time",
+        "game_quality_distribution",
+        "game_rag_triage_distribution",
+        "core_kpi_snapshot"
+      ],
+      "why": {
+        "intent_distribution": "월별 데이터 성격 변화 파악",
+        "daily_task_counts": "작업량 변동과 병목일 확인",
+        "daily_average_tagging_time": "난이도 상승일/비효율 발생일 확인",
+        "game_task_counts": "게임별 물량 편차 확인",
+        "game_average_tagging_time": "게임별 난이도 비교",
+        "game_quality_distribution": "게임별 품질 편차 확인",
+        "game_rag_triage_distribution": "게임별 초동수사 의존도 확인",
+        "core_kpi_snapshot": "월별 핵심 KPI 요약"
+      }
+    }
   }
 }

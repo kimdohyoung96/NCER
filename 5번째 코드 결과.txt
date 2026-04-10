@@ -1,0 +1,115 @@
+5번째 코드 결과
+
+핵심 결과:
+
+전체 태스크 수: 1000
+filtered_task_count: 1000
+태깅 완료율: 100.0%
+검수 완료율: 82.4%
+triage 커버리지: 82.5%
+fallback 비율: 54.5%
+
+품질:
+
+reviewed_tasks: 824
+Good: 375
+Fair: 138
+Bad: 311
+strict 통과율: 45.51%
+lenient 통과율: 62.26%
+
+재작업률:
+
+기준: annotations[0].created_at 과 annotations[0].updated_at 을 초 단위로 비교
+같은 초면 재작업 아님
+다른 초면 재작업
+
+결과:
+
+ground_truth_time_based_reworked_tasks: 478
+ground_truth_time_based_rework_rate: 47.8%
+
+일자별 생산량:
+
+2026-03-25: 49
+2026-03-26: 45
+2026-03-27: 15
+2026-03-30: 76
+2026-03-31: 116
+2026-04-01: 125
+2026-04-02: 147
+2026-04-06: 159
+2026-04-07: 127
+2026-04-08: 42
+2026-04-09: 43
+2026-04-10: 56
+
+일별 평균 태깅 소요 시간(초):
+
+2026-03-25: 119.37
+2026-03-26: 629.54
+2026-03-27: 861.64
+2026-03-30: 806.39
+2026-03-31: 753.68
+2026-04-01: 528.81
+2026-04-02: 565.15
+2026-04-06: 699.41
+2026-04-07: 1283.69
+2026-04-08: 1290.39
+2026-04-09: 738.39
+2026-04-10: 1576.44
+
+게임별 개수:
+
+UNKNOWN: 1
+aion2: 541
+bnsneo: 5
+lineage2m: 26
+lineageclassic: 369
+lineagem: 25
+lineagew: 33
+
+게임별 평균 태깅 소요 시간(초):
+
+UNKNOWN: 1062.17
+aion2: 822.11
+bnsneo: 681.60
+lineage2m: 763.56
+lineageclassic: 738.02
+lineagem: 1095.73
+lineagew: 746.99
+
+게임별 품질 분포:
+
+UNKNOWN: Good 0 / Fair 1 / Bad 0
+aion2: Good 217 / Fair 83 / Bad 148
+bnsneo: Good 1 / Fair 0 / Bad 4
+lineage2m: Good 12 / Fair 4 / Bad 8
+lineageclassic: Good 126 / Fair 46 / Bad 124
+lineagem: Good 7 / Fair 1 / Bad 12
+lineagew: Good 12 / Fair 3 / Bad 15
+
+게임별 RAG(or 초동수사) 내 triage yes/no 분포:
+
+UNKNOWN: yes 1 / no 0 / rag_tasks 1
+aion2: yes 240 / no 208 / rag_tasks 448
+bnsneo: yes 0 / no 5 / rag_tasks 5
+lineage2m: yes 6 / no 18 / rag_tasks 24
+lineageclassic: yes 119 / no 178 / rag_tasks 297
+lineagem: yes 12 / no 8 / rag_tasks 20
+lineagew: yes 5 / no 24 / rag_tasks 29
+
+검증:
+
+rag_tasks_total: 824
+rag_triage_yes_total: 383
+rag_triage_no_total: 441
+합: 824
+
+즉, 이번 파일 기준에서는
+
+RAG or 초동수사 = 824건
+그 안에서 yes 383 / no 441
+
+
+위 파일의 결과로 intent분포, 일 평균 처리량, 일 중앙값 처리량, 문서활용의 결과 값에 대해서도 알려줘.
