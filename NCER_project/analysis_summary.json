@@ -1,0 +1,85 @@
+{
+  "dataset_overview": {
+    "total_tasks": 999,
+    "annotated_tasks": 999,
+    "annotation_completion_rate": 1.0,
+    "quality_review_coverage": 0.8238238238238238,
+    "triage_coverage": 0.8268268268268268,
+    "fallback_rate": 0.5445445445445446
+  },
+  "quality_metrics": {
+    "reviewed_tasks": 823,
+    "strict_pass_rate_good_only": 0.4520048602673147,
+    "lenient_pass_rate_good_or_fair": 0.6184690157958688,
+    "strict_rework_rate_bad_only": 0.38153098420413123,
+    "lenient_rework_rate_fair_or_bad": 0.5479951397326853,
+    "quality_distribution": {
+      "Good": 372,
+      "Bad": 314,
+      "Fair": 137
+    }
+  },
+  "time_metrics": {
+    "average_tagging_lead_time_sec": 699.2486856856857,
+    "median_tagging_lead_time_sec": 227.161,
+    "p90_tagging_lead_time_sec": 1263.9838000000002,
+    "p95_tagging_lead_time_sec": 2792.4034999999926,
+    "min_tagging_lead_time_sec": 1.56,
+    "max_tagging_lead_time_sec": 60138.053
+  },
+  "label_distributions": {
+    "intent_distribution": {
+      "게임 외 질문(일상/메타성, 의미 없는 발화 등)": 22,
+      "RAG or 초동수사": 827,
+      "멀티턴 / 문맥 부족 (게임, 고객 서비스 관련)": 86,
+      "외국어": 39,
+      "욕설/비난/비윤리적_주제": 18,
+      "타 게임 / 외부 서비스": 7
+    },
+    "triage_distribution": {
+      "no": 450,
+      "yes": 376
+    }
+  },
+  "document_usage_metrics": {
+    "avg_used_docs_per_task": 0.8418418418418419,
+    "avg_unused_should_use_per_task": 0.3993993993993994,
+    "tasks_with_missing_should_use_docs": 136,
+    "missing_should_use_docs_rate": 0.13613613613613615,
+    "tasks_with_zero_used_docs": 540,
+    "zero_used_docs_rate": 0.5405405405405406,
+    "tasks_with_doc_comment": 336,
+    "tasks_with_answer_comment": 398
+  },
+  "throughput": {
+    "daily_task_counts": {
+      "2026-03-25": 98,
+      "2026-03-26": 143,
+      "2026-03-30": 55,
+      "2026-03-31": 146,
+      "2026-04-01": 228,
+      "2026-04-02": 119,
+      "2026-04-06": 124,
+      "2026-04-07": 83,
+      "2026-04-08": 3
+    },
+    "annotator_task_counts": {
+      "60": 42,
+      "59": 152,
+      "85": 306,
+      "58": 150,
+      "86": 349
+    }
+  },
+  "recommended_additional_metrics": {
+    "intent_share_of_total": "의도별 데이터 비중. 편향된 분포 여부 확인",
+    "fallback_rate": "fallback 응답 비율. 검색/생성 실패 구간 탐지",
+    "used_docs_zero_rate": "답변 생성 시 문서 미사용 비율. RAG 품질 저하 신호",
+    "missing_should_use_docs_rate": "써야 할 문서를 놓친 비율. retrieval 리콜 이슈 탐지",
+    "quality_by_intent": "의도별 Good/Fair/Bad 분포. 취약 카테고리 확인",
+    "annotator_variance": "주석자별 처리량·품질 편차. 교육/가이드 정합성 확인",
+    "p90_p95_lead_time": "평균보다 긴 꼬리 작업 탐지. 일정 산정 정확도 향상",
+    "fallback_by_intent": "어떤 의도에서 fallback이 집중되는지 확인",
+    "review_gap_rate": "의도는 태깅됐지만 triage/quality가 비어 있는 비율"
+  }
+}

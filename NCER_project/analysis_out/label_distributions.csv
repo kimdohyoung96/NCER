@@ -1,0 +1,32 @@
+﻿group,label,count,rate
+intent,RAG or 초동수사,827,0.8278278278278278
+intent,"멀티턴 / 문맥 부족 (게임, 고객 서비스 관련)",86,0.08608608608608609
+intent,외국어,39,0.03903903903903904
+intent,"게임 외 질문(일상/메타성, 의미 없는 발화 등)",22,0.022022022022022022
+intent,욕설/비난/비윤리적_주제,18,0.018018018018018018
+intent,타 게임 / 외부 서비스,7,0.007007007007007007
+triage,no,450,0.5447941888619855
+triage,yes,376,0.4552058111380145
+answer_quality,Good,372,0.4520048602673147
+answer_quality,Bad,314,0.38153098420413123
+answer_quality,Fair,137,0.16646415552855406
+wid,aion2,541,0.5415415415415415
+wid,lineageclassic,369,0.36936936936936937
+wid,lineagew,33,0.03303303303303303
+wid,lineage2m,26,0.026026026026026026
+wid,lineagem,25,0.025025025025025027
+wid,bnsneo,5,0.005005005005005005
+task_range,164209-165076,867,0.8678678678678678
+task_range,165201-165332,132,0.13213213213213212
+is_reworked,True,835,0.8358358358358359
+is_reworked,False,164,0.16416416416416416
+rework_reason,triage|answer_quality,362,0.43353293413173655
+rework_reason,triage|answer_quality|doc_comment|answer_comment,263,0.3149700598802395
+rework_reason,triage|answer_quality|answer_comment,125,0.1497005988023952
+rework_reason,triage|answer_quality|doc_comment,71,0.08502994011976048
+rework_reason,answer_comment,7,0.008383233532934131
+rework_reason,triage,3,0.003592814371257485
+rework_reason,answer_quality,1,0.0011976047904191617
+rework_reason,answer_quality|doc_comment|answer_comment,1,0.0011976047904191617
+rework_reason,triage|doc_comment|answer_comment,1,0.0011976047904191617
+rework_reason,triage|answer_comment,1,0.0011976047904191617

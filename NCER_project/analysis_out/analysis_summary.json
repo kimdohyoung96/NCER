@@ -1,0 +1,106 @@
+{
+  "scope": {
+    "fixed_task_ranges": [
+      "164209-165076",
+      "165201-165332"
+    ],
+    "expected_task_count": 1000,
+    "filtered_task_count": 999,
+    "range_distribution": {
+      "164209-165076": 867,
+      "165201-165332": 132
+    }
+  },
+  "dataset_overview": {
+    "total_tasks": 999,
+    "annotated_tasks": 999,
+    "annotation_completion_rate": 1.0,
+    "quality_review_coverage": 0.8238238238238238,
+    "triage_coverage": 0.8268268268268268,
+    "fallback_rate": 0.5445445445445446,
+    "cancelled_rate": 0.0
+  },
+  "quality_metrics": {
+    "reviewed_tasks": 823,
+    "strict_pass_rate_good_only": 0.4520048602673147,
+    "lenient_pass_rate_good_or_fair": 0.6184690157958688,
+    "strict_rework_rate_bad_only": 0.38153098420413123,
+    "lenient_rework_rate_fair_or_bad": 0.5479951397326853,
+    "quality_distribution": {
+      "Good": 372,
+      "Bad": 314,
+      "Fair": 137
+    }
+  },
+  "rework_metrics": {
+    "rework_definition": "Quality/review event based only: triage or answer_quality or doc_comment or answer_comment",
+    "reworked_tasks": 835,
+    "rework_rate_all_tasks": 0.8358358358358359,
+    "rework_reason_distribution": {
+      "triage|answer_quality": 362,
+      "triage|answer_quality|doc_comment|answer_comment": 263,
+      "triage|answer_quality|answer_comment": 125,
+      "triage|answer_quality|doc_comment": 71,
+      "answer_comment": 7,
+      "answer_quality": 1,
+      "answer_quality|doc_comment|answer_comment": 1,
+      "triage|doc_comment|answer_comment": 1,
+      "triage": 3,
+      "triage|answer_comment": 1
+    }
+  },
+  "time_metrics": {
+    "average_tagging_lead_time_sec": 699.2486856856857,
+    "median_tagging_lead_time_sec": 227.161,
+    "p90_tagging_lead_time_sec": 1263.9838000000002,
+    "p95_tagging_lead_time_sec": 2792.4034999999926,
+    "min_tagging_lead_time_sec": 1.56,
+    "max_tagging_lead_time_sec": 60138.053
+  },
+  "speed_metrics": {
+    "daily_task_counts": {
+      "2026-03-25": 98,
+      "2026-03-26": 143,
+      "2026-03-30": 55,
+      "2026-03-31": 146,
+      "2026-04-01": 228,
+      "2026-04-02": 119,
+      "2026-04-06": 124,
+      "2026-04-07": 83,
+      "2026-04-08": 3
+    },
+    "average_daily_output": 111,
+    "median_daily_output": 119,
+    "annotator_task_counts": {
+      "60": 42,
+      "59": 152,
+      "85": 306,
+      "58": 150,
+      "86": 349
+    }
+  },
+  "label_distributions": {
+    "intent_distribution": {
+      "게임 외 질문(일상/메타성, 의미 없는 발화 등)": 22,
+      "RAG or 초동수사": 827,
+      "멀티턴 / 문맥 부족 (게임, 고객 서비스 관련)": 86,
+      "외국어": 39,
+      "욕설/비난/비윤리적_주제": 18,
+      "타 게임 / 외부 서비스": 7
+    },
+    "triage_distribution": {
+      "no": 450,
+      "yes": 376
+    }
+  },
+  "retrieval_doc_usage_metrics": {
+    "avg_used_docs_per_task": 0.8418418418418419,
+    "avg_unused_should_use_per_task": 0.3993993993993994,
+    "tasks_with_zero_used_docs": 540,
+    "zero_used_docs_rate": 0.5405405405405406,
+    "tasks_with_missing_should_use_docs": 136,
+    "missing_should_use_docs_rate": 0.13613613613613615,
+    "tasks_with_doc_comment": 336,
+    "tasks_with_answer_comment": 398
+  }
+}
